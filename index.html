@@ -7,6 +7,9 @@
     <!-- font-awesome -->
     <link rel="shortcut icon" type="image/jpg" href="./images/title.png" />
     <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
     <!-- css -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -17,9 +20,13 @@
         <!-- nav header -->
         <div class="nav-header" style="position: relative">
           <!-- <img src="./images/logo.svg" class="nav-logo" alt="nav logo" /> -->
-          <h2 style="letter-spacing: -1px; text-shadow: 3px 3px 4px rgba(150, 150, 150, 0.5)">
-            Jude <span style="color: hsl(42, 78%, 60%)">Nnadi</span>
-          </h2>
+          <h1
+            style="font-size: 32px; letter-spacing: -1px; text-shadow: 3px 3px 4px rgba(150, 150, 150, 0.5)"
+          >
+            <a href="index.html" style="color: rgb(29, 155, 240)"
+              >Jude <span style="color: hsl(42, 78%, 60%)">Nnadi</span></a
+            >
+          </h1>
           <button class="nav-btn" id="nav-btn">
             <i class="fas fa-bars"></i>
           </button>
@@ -76,11 +83,7 @@
               <i class="fab fa-linkedin"></i>
             </a>
           </li>
-          <li>
-            <a href="https://www.twitter.com/No_lose_focus" target="_blank" class="social-icon">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
+
           <li>
             <a href="https://www.github.com/judennadi" target="_blank" class="social-icon">
               <i class="fab fa-github"></i>
@@ -97,7 +100,7 @@
           <h2>Hi</h2>
           <div class="underline"></div>
           <h1>i'm Jude</h1>
-          <h4>Full-Stack Web Developer</h4>
+          <h4>Software Engineer</h4>
           <a href="#contact" class="btn hero-btn">hire me</a>
           <!-- social icons -->
         </article>
@@ -123,7 +126,7 @@
           </div>
           <!--end of section title -->
           <p>
-            I'm a Self-taught Full-Stack Web Developer based in Enugu, Nigeria. <br />
+            I'm a Self-taught Full Stack Web Developer based in Enugu, Nigeria. <br />
             I've done quite a few freelance jobs, developing both the front-end and the back-end to client's
             satisfaction.
           </p>
@@ -131,7 +134,7 @@
             I love finding new and creative ways to express myself. Constantly learning and evolving to be the
             best i can be. I just love creating intuitive, responsive and dynamic user experience.
           </p>
-          <a href="images/My CV.pdf" download="Jude Nnadi's CV" class="btn">Download CV</a>
+          <a href="images/Resume.pdf" target="_blank" class="btn">View Resume</a>
         </article>
       </div>
     </section>
@@ -243,22 +246,6 @@
           </div>
         </article>
 
-        <!-- <article class="single-project">
-          <div class="project-container">
-            <img src="./images/project-6.png" alt="single project" />
-            <a href="https://www.johnsmilga.com" target="_blank" class="project-icon">
-              <i class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-          <div class="project-details">
-            <h4>project name</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eveniet amet odit aperiam,
-              provident cum possimus sapiente minus quos! Ipsum?
-            </p>
-          </div>
-        </article> -->
-
         <!-- end of single project -->
       </div>
     </section>
@@ -271,95 +258,114 @@
         <div class="underline"></div>
       </div>
       <!--end of section title -->
+      <style>
+        .section-center.skills-center img {
+          width: 70px;
+        }
+        @media screen and (min-width: 768px) {
+          .section-center.skills-center {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+          }
+        }
+        @media screen and (max-width: 767px) {
+          .section-center.skills-center {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+      </style>
       <div class="section-center skills-center">
-        <article>
-          <h3>front end</h3>
-          <!-- single skill -->
-          <div class="skill">
-            <p>HTML/CSS</p>
-            <div class="skill-container">
-              <div class="skill-value" style="width: 90%"></div>
-              <p class="skill-text" style="left: 90%">90%</p>
-            </div>
-          </div>
-          <!--end of  single skill -->
-          <!-- single skill -->
-          <div class="skill">
-            <p>Javascript</p>
-            <div class="skill-container">
-              <div class="skill-value value-70"></div>
-              <p class="skill-text skill-text-70">70%</p>
-            </div>
-          </div>
-          <div class="skill">
-            <p>JQuery</p>
-            <div class="skill-container">
-              <div class="skill-value value-70" style="width: 60%"></div>
-              <p class="skill-text skill-text-70" style="left: 60%">60%</p>
-            </div>
-          </div>
-          <!--end of  single skill -->
-          <!-- single skill -->
-          <div class="skill">
-            <p>React</p>
-            <div class="skill-container">
-              <div class="skill-value value-80"></div>
-              <p class="skill-text skill-text-80">80%</p>
-            </div>
-          </div>
-          <div class="skill">
-            <p>Typescript</p>
-            <div class="skill-container">
-              <div class="skill-value value-80" style="width: 60%"></div>
-              <p class="skill-text skill-text-80" style="left: 60%">60%</p>
-            </div>
-          </div>
-          <!--end of  single skill -->
-        </article>
-        <article>
-          <h3>Back end</h3>
-          <!-- single skill -->
-          <div class="skill">
-            <p>Node</p>
-            <div class="skill-container">
-              <div class="skill-value" style="width: 70%"></div>
-              <p class="skill-text" style="left: 70%">70%</p>
-            </div>
-          </div>
-          <!--end of  single skill -->
-          <!-- single skill -->
-          <div class="skill">
-            <p>GOlang</p>
-            <div class="skill-container">
-              <div class="skill-value value-70" style="width: 20%"></div>
-              <p class="skill-text skill-text-70" style="left: 20%">20%</p>
-            </div>
-          </div>
-          <!--end of  single skill -->
-          <!-- single skill -->
-          <div class="skill">
-            <p>MongoDB</p>
-            <div class="skill-container">
-              <div class="skill-value value-80" style="width: 60%"></div>
-              <p class="skill-text skill-text-80" style="left: 60%">60%</p>
-            </div>
-          </div>
-          <div class="skill">
-            <p>PostgreSQL</p>
-            <div class="skill-container">
-              <div class="skill-value value-80" style="width: 50%"></div>
-              <p class="skill-text skill-text-80" style="left: 50%">50%</p>
-            </div>
-          </div>
-          <div class="skill">
-            <p>SEO</p>
-            <div class="skill-container">
-              <div class="skill-value value-80" style="width: 80%"></div>
-              <p class="skill-text skill-text-80" style="left: 80%">80%</p>
-            </div>
-          </div>
-          <!--end of  single skill -->
-        </article>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+          <p style="font-size: 20px; font-weight: 600">HTML</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+          <p style="font-size: 20px; font-weight: 600">CSS</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+          <p style="font-size: 20px; font-weight: 600">JAVASCRIPT</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+          <p style="font-size: 20px; font-weight: 600">REACT</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" />
+
+          <p style="font-size: 20px; font-weight: 600">MUI</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+          <p style="font-size: 20px; font-weight: 600">NODEJS</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" />
+          <p style="font-size: 20px; font-weight: 600">BASH</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+
+          <p style="font-size: 20px; font-weight: 600">MONGODB</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+          <p style="font-size: 20px; font-weight: 600">POSTGRESQL</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" />
+          <p style="font-size: 20px; font-weight: 600">GOLANG</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
+          <p style="font-size: 20px; font-weight: 600">DOCKER</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" />
+          <p style="font-size: 20px; font-weight: 600">KUBERNETES</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" />
+
+          <p style="font-size: 20px; font-weight: 600">NGINX</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" />
+
+          <p style="font-size: 20px; font-weight: 600">REDIS</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" />
+
+          <p style="font-size: 20px; font-weight: 600">ANSIBLE</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" />
+
+          <p style="font-size: 20px; font-weight: 600">TERRAFORM</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" />
+
+          <p style="font-size: 20px; font-weight: 600">JENKINS</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+          />
+          <p style="font-size: 20px; font-weight: 600">AWS</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" />
+
+          <p style="font-size: 20px; font-weight: 600">MICROSOFT AZURE</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+          <p style="font-size: 20px; font-weight: 600">GIT</p>
+        </div>
       </div>
     </section>
     <!-- end of skills -->
@@ -376,7 +382,6 @@
           <div class="underline"></div>
         </div>
         <div>
-          <p style="margin-bottom: 0.5rem">Phone: +234 913 482 0251</p>
           <p>Email: Judeonnadi@gmail.com</p>
         </div>
         <!--end of section title -->
@@ -387,11 +392,7 @@
                 <i class="fab fa-linkedin"></i>
               </a>
             </li>
-            <li>
-              <a href="https://www.twitter.com/No_lose_focus" target="_blank" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
+
             <li>
               <a href="https://www.github.com/judennadi" target="_blank" class="social-icon">
                 <i class="fab fa-github"></i>
@@ -403,7 +404,7 @@
           href="https://mail.google.com/mail/?view=cm&fs=1&to=judeonnadi@gmail.com"
           target="_blank"
           class="btn"
-          >Email me</a
+          >Send me an Email</a
         >
       </div>
     </section>
@@ -418,11 +419,6 @@
           </a>
         </li>
         <li>
-          <a href="https://www.twitter.com/No_lose_focus" target="_blank" class="social-icon">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
-        <li>
           <a href="https://www.github.com/judennadi" target="_blank" class="social-icon">
             <i class="fab fa-github"></i>
           </a>
@@ -431,6 +427,7 @@
 
       <p>&copy; <span id="date"></span> Jude Nnadi. all rights reserved</p>
     </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>

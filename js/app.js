@@ -13,6 +13,43 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("navbar-fixed");
   }
 });
+
+// const sT = ScrollReveal({
+//   origin: "top",
+//   distance: "80px",
+//   duration: 1500,
+//   reset: true,
+// });
+const sL = ScrollReveal({
+  origin: "left",
+  distance: "80px",
+  duration: 1500,
+  // reset: true,
+});
+
+/*SCROLL HOME*/
+sL.reveal("header article h2", { delay: 200 });
+sL.reveal("header article div", { delay: 300 });
+sL.reveal("header article h1", { delay: 400 });
+sL.reveal("header article h4", { delay: 600 });
+
+/*SCROLL ABOUT*/
+sL.reveal(".about-img", { delay: 300 });
+sL.reveal(".about-info", { delay: 500 });
+
+// /*SCROLL SKILLS*/
+sL.reveal(".skills-front", { delay: 400 });
+sL.reveal(".skills-front div", { interval: 200 });
+sL.reveal(".skills-back", { delay: 700 });
+sL.reveal(".skills-back div", { interval: 200 });
+
+// /*SCROLL WORK*/
+sL.reveal(".projects section-title", { interval: 200 });
+sL.reveal(".projects article", { interval: 400 });
+
+// /*SCROLL CONTACT*/
+// sT.reveal(".contact-input", { interval: 200 });
+
 // show sidebar
 navBtn.addEventListener("click", function () {
   sidebar.classList.add("show-sidebar");
